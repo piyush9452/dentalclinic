@@ -10,15 +10,15 @@ export default function Navbar() {
   const links = ["Home", "About", "Blog", "Pages", "Contact"];
 
   return (
-    <nav className="bg-blue-400 shadow-md fixed w-full top-0 left-0 z-50">
+    <nav className="transition bg-gradient-to-r from-[#b5e8ff] to-[#a2ebff] shadow-md fixed w-full top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="text-2xl font-bold text-white">
-          Dental<span className="text-yellow-300">Clinic</span>
+        <div className="text-2xl font-bold text-[#274760]">
+          Dental<span className="text-yellow-200">Clinic</span>
         </div>
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex space-x-8 text-white font-medium relative">
+        <ul className="hidden md:flex space-x-8 font-medium relative text-[#274760]">
           {links.map((link, idx) =>
             link === "Pages" ? (
               <li
@@ -75,7 +75,7 @@ export default function Navbar() {
         <div className="flex items-center space-x-4">
           {/* Search Icon */}
           <button
-            className="text-white hover:text-yellow-300 text-xl"
+            className="text-[#274760] hover:text-yellow-300 text-xl"
             onClick={() => setSearchOpen(!searchOpen)}
             aria-label="Toggle Search"
           >
