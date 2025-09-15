@@ -12,7 +12,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-[#cbe7f9] to-[#e0f0fb] text-[#274760]">
+    <footer className="bg-gradient-to-r from-[#d7f2ffff] to-[#c0f1ffff] text-[#274760]">
       {/* Top Section */}
       <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-4 gap-12">
         

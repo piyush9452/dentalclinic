@@ -7,6 +7,9 @@ import AboutUs from './Components/AboutUs'
 import Footer from './Components/Footer'
 import AwardsSection from './Components/Awards'
 import ReviewsSection from './Components/Reviews'
+import Departments from './Components/Departments'
+import BlogPosts from './Components/BlogPosts'
+import Questions from './Components/Questions'
 
 function App() {
 
@@ -16,8 +19,11 @@ function App() {
       <Hero/>
       <Values />
       <AboutUs />
+      <Departments />
       <AwardsSection />
       <ReviewsSection />
+      <BlogPosts />
+      <Questions />
       <Footer />
     </>
   )
