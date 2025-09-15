@@ -30,8 +30,8 @@ export default function FAQ() {
     <section className="py-16 px-6 bg-white">
       {/* Heading */}
       <div className="text-center mb-10">
-        <h2 className="text-blue-600 text-lg font-semibold">WHAT PEOPLE</h2>
-        <h3 className="text-3xl font-bold text-gray-800">Usually Asked</h3>
+        <h2 className="text-[#307CB4] text-lg font-semibold">WHAT PEOPLE</h2>
+        <h3 className="text-6xl font-bold text-[#264660]">Usually Asked</h3>
       </div>
 
       {/* FAQ Accordion */}
@@ -40,7 +40,7 @@ export default function FAQ() {
           <div
             key={index}
             className={`rounded-2xl border ${
-              openIndex === index ? "bg-blue-100 border-blue-300" : "border-gray-200"
+              openIndex === index ? "bg-[#d7f2ffff] border-blue-300" : "border-gray-200"
             }`}
           >
             <button
@@ -51,9 +51,9 @@ export default function FAQ() {
                 {faq.question}
               </span>
               {openIndex === index ? (
-                <IoIosArrowDown className="text-blue-600" size={22} />
+                <IoIosArrowDown className="text-[#307CB4]" size={22} />
               ) : (
-                <IoIosArrowUp className="text-blue-600" size={22} />
+                <IoIosArrowUp className="text-[#307CB4]" size={22} />
               )}
             </button>
 
