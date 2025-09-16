@@ -12,19 +12,19 @@ import BlogPosts from './Components/BlogPosts'
 import Questions from './Components/Questions'
 
 function App() {
-
   return (
     <>
-      <Navbar/>
-      <Hero/>
-      <Values />
-      <AboutUs />
-      <Departments />
-      <AwardsSection />
-      <ReviewsSection />
-      <BlogPosts />
-      <Questions />
-      <Footer />
+      <Navbar />
+      
+      <Hero id="hero" />
+      <Values id="values" />
+      <AboutUs id="about" />
+      <Departments id="departments" />
+      <AwardsSection id="awards" />
+      <ReviewsSection id="reviews" />
+      <BlogPosts id="blog" />
+      <Questions id="questions" />
+      <Footer id="footer" />
     </>
   )
 }

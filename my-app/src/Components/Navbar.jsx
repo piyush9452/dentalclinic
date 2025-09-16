@@ -1,13 +1,19 @@
-// src/components/Navbar.jsx
 import { useState } from "react";
 import { FaBars, FaTimes, FaSearch, FaChevronDown } from "react-icons/fa";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-  const [pagesOpen, setPagesOpen] = useState(false); 
+  const [pagesOpen, setPagesOpen] = useState(false);
 
-  const links = ["Home", "About", "Blog", "Pages", "Contact"];
+  // map links to section IDs
+  const links = [
+    { name: "Home", href: "#hero" },
+    { name: "About", href: "#about" },
+    { name: "Blog", href: "#blog" },
+    { name: "Pages", href: "#" }, 
+    { name: "Contact", href: "#footer" },
+  ];
 
   return (
     <nav className="transition bg-gradient-to-r from-[#b5e8ff] to-[#a2ebff] shadow-md fixed w-full top-0 left-0 z-50">
@@ -20,52 +26,53 @@ export default function Navbar() {
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-8 font-medium relative text-[#274760]">
           {links.map((link, idx) =>
-            link === "Pages" ? (
+            link.name === "Pages" ? (
               <li
                 key={idx}
                 className="relative group cursor-pointer flex items-center space-x-1"
                 onClick={() => setPagesOpen(!pagesOpen)}
               >
                 <span className="hover:text-yellow-300 transition-colors duration-200">
-                  {link}
+                  {link.name}
                 </span>
                 <FaChevronDown className="text-sm" />
 
                 {/* Dropdown */}
                 <ul className="absolute left-0 top-full mt-2 bg-white shadow-lg rounded-lg w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
-                    <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
-                      Appoinments
-                    </li>
-                    <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
-                      Doctors
-                    </li>
-                    <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
-                      Doctor Details
-                    </li>
-                    <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
-                      Departments
-                    </li>
-                    <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
-                      Department Details
-                    </li>
-                    <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
-                      Pricing Plan
-                    </li>
-                    <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
-                      Gallery
-                    </li>
-                    <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
-                      Time Table
-                    </li>
+                  <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
+                    Appoinments
+                  </li>
+                  <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
+                    Doctors
+                  </li>
+                  <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
+                    Doctor Details
+                  </li>
+                  <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
+                    Departments
+                  </li>
+                  <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
+                    Department Details
+                  </li>
+                  <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
+                    Pricing Plan
+                  </li>
+                  <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
+                    Gallery
+                  </li>
+                  <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
+                    Time Table
+                  </li>
                 </ul>
               </li>
-              
             ) : (
-              <li
-                key={idx}
-                className="hover:text-yellow-300 transition-colors duration-200 cursor-pointer"
-              >
-                {link}
+              <li key={idx}>
+                <a
+                  href={link.href}
+                  className="hover:text-yellow-300 transition-colors duration-200 cursor-pointer"
+                >
+                  {link.name}
+                </a>
               </li>
             )
           )}
@@ -101,7 +108,7 @@ export default function Navbar() {
       >
         <ul className="flex flex-col items-center py-4 space-y-4 text-white font-medium">
           {links.map((link, idx) =>
-            link === "Pages" ? (
+            link.name === "Pages" ? (
               <li key={idx} className="w-full text-center">
                 <button
                   className="flex items-center justify-center w-full hover:text-yellow-300 transition-colors"
@@ -135,23 +142,24 @@ export default function Navbar() {
                     <li className="px-4 py-2 hover:bg-blue-100 cursor-pointer">
                       Time Table
                     </li>
-                    
                   </ul>
                 )}
               </li>
             ) : (
-              <li
-                key={idx}
-                className="hover:text-yellow-300 transition-colors duration-200 cursor-pointer"
-              >
-                {link}
+              <li key={idx}>
+                <a
+                  href={link.href}
+                  className="hover:text-yellow-300 transition-colors duration-200 cursor-pointer"
+                >
+                  {link.name}
+                </a>
               </li>
             )
           )}
         </ul>
       </div>
 
-      
+      {/* Search bar dropdown */}
       <div
         className={`bg-white shadow-md px-6 flex items-center space-x-3 overflow-hidden transition-all duration-500 ${
           searchOpen ? "max-h-20 py-3 opacity-100" : "max-h-0 py-0 opacity-0"

@@ -3,7 +3,7 @@ import { FaPlay, FaPhoneAlt, FaAmbulance, FaMapMarkerAlt } from "react-icons/fa"
 
 export default function Hero() {
   return (
-    <section
+    <section id="hero"
       className="pt-24 pb-12 relative"
       style={{
         background: "linear-gradient(90deg, #d7f2ffff 0%, #c0f1ffff 100%)",

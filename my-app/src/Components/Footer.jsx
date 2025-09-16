@@ -12,6 +12,7 @@ import {
 
 export default function Footer() {
   return (
+    <section id="footer">
     <footer className="bg-gradient-to-r from-[#d7f2ffff] to-[#c0f1ffff] text-[#274760]">
       {/* Top Section */}
       <div className="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-4 gap-12">
@@ -116,5 +117,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </section>
   );
 }

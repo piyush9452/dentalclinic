@@ -20,7 +20,7 @@ export default function BlogPosts() {
   ];
 
   return (
-    <section className="py-12 px-6 bg-white">
+    <section id="blog" className="py-12 px-6 bg-white">
       {/* Heading */}
       <div className="text-center mb-10">
         <h2 className="text-[#307CB4] text-2xl font-semibold">BLOG POSTS</h2>

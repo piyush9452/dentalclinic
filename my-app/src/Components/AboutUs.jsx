@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function AboutUs() {
   return (
-    <section className="py-20 bg-blue-50">
+    <section id="about" className="py-20 bg-blue-50">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
         {/* Left Side - Images */}
         <div className="relative flex flex-col items-center">
@@ -32,8 +32,6 @@ export default function AboutUs() {
               alt="Tick Icon"
               className="w-8 h-8 relative z-10"
             />
-
-            
           </div>
         </div>
 
