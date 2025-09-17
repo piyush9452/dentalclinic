@@ -1,17 +1,18 @@
+// src/components/Navbar.jsx
 import { useState } from "react";
-import { FaBars, FaTimes, FaSearch, FaChevronDown } from "react-icons/fa";
+import { FaBars, FaTimes, FaSearch } from "react-icons/fa";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-  const [pagesOpen, setPagesOpen] = useState(false);
 
-  // map links to section IDs
+  // map links to section IDs (no Pages now)
   const links = [
     { name: "Home", href: "#hero" },
     { name: "About", href: "#about" },
+    { name: "Doctor Details", href: "#doctors" },
     { name: "Blog", href: "#blog" },
-    { name: "Pages", href: "#" }, 
+    
     { name: "Contact", href: "#footer" },
   ];
 
@@ -20,62 +21,21 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="text-2xl font-bold text-[#274760]">
-          Dental<span className="text-yellow-200">Clinic</span>
+          Family Dental<span>Clinic</span>
         </div>
 
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-8 font-medium relative text-[#274760]">
-          {links.map((link, idx) =>
-            link.name === "Pages" ? (
-              <li
-                key={idx}
-                className="relative group cursor-pointer flex items-center space-x-1"
-                onClick={() => setPagesOpen(!pagesOpen)}
+          {links.map((link, idx) => (
+            <li key={idx}>
+              <a
+                href={link.href}
+                className="hover:text-yellow-300 transition-colors duration-200 cursor-pointer"
               >
-                <span className="hover:text-yellow-300 transition-colors duration-200">
-                  {link.name}
-                </span>
-                <FaChevronDown className="text-sm" />
-
-                {/* Dropdown */}
-                <ul className="absolute left-0 top-full mt-2 bg-white shadow-lg rounded-lg w-40 opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300">
-                  <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
-                    Appoinments
-                  </li>
-                  <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
-                    Doctors
-                  </li>
-                  <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
-                    Doctor Details
-                  </li>
-                  <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
-                    Departments
-                  </li>
-                  <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
-                    Department Details
-                  </li>
-                  <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
-                    Pricing Plan
-                  </li>
-                  <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
-                    Gallery
-                  </li>
-                  <li className="px-4 py-2 text-gray-700 hover:bg-blue-100 cursor-pointer">
-                    Time Table
-                  </li>
-                </ul>
-              </li>
-            ) : (
-              <li key={idx}>
-                <a
-                  href={link.href}
-                  className="hover:text-yellow-300 transition-colors duration-200 cursor-pointer"
-                >
-                  {link.name}
-                </a>
-              </li>
-            )
-          )}
+                {link.name}
+              </a>
+            </li>
+          ))}
         </ul>
 
         {/* Right Side: Search + Hamburger */}
@@ -107,55 +67,16 @@ export default function Navbar() {
         }`}
       >
         <ul className="flex flex-col items-center py-4 space-y-4 text-white font-medium">
-          {links.map((link, idx) =>
-            link.name === "Pages" ? (
-              <li key={idx} className="w-full text-center">
-                <button
-                  className="flex items-center justify-center w-full hover:text-yellow-300 transition-colors"
-                  onClick={() => setPagesOpen(!pagesOpen)}
-                >
-                  Pages <FaChevronDown className="ml-2 text-sm" />
-                </button>
-                {pagesOpen && (
-                  <ul className="mt-2 bg-white text-gray-700 shadow-md rounded-md space-y-2 py-2">
-                    <li className="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                      Appoinments
-                    </li>
-                    <li className="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                      Doctors
-                    </li>
-                    <li className="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                      Doctor Details
-                    </li>
-                    <li className="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                      Departments
-                    </li>
-                    <li className="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                      Department Details
-                    </li>
-                    <li className="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                      Pricing Plan
-                    </li>
-                    <li className="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                      Gallery
-                    </li>
-                    <li className="px-4 py-2 hover:bg-blue-100 cursor-pointer">
-                      Time Table
-                    </li>
-                  </ul>
-                )}
-              </li>
-            ) : (
-              <li key={idx}>
-                <a
-                  href={link.href}
-                  className="hover:text-yellow-300 transition-colors duration-200 cursor-pointer"
-                >
-                  {link.name}
-                </a>
-              </li>
-            )
-          )}
+          {links.map((link, idx) => (
+            <li key={idx}>
+              <a
+                href={link.href}
+                className="hover:text-yellow-300 transition-colors duration-200 cursor-pointer"
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
 

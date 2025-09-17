@@ -15,7 +15,7 @@ export default function BlogPosts() {
     {
       date: "May 1, 2023",
       title: "The Importance of Regular Cancer Screenings and Early Detection",
-      image: "https://html.laralink.com/prohealth/assets/img/home_1/post_3.jpeg",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPFc8kfsdtU95_YLkfTQH8QQuD_NzxcYGbZA&s",
     },
   ];
 

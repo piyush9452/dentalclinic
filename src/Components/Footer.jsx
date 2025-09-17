@@ -7,7 +7,8 @@ import {
   FaYoutube, 
   FaLinkedinIn, 
   FaTwitter, 
-  FaInstagram 
+  FaInstagram, 
+  FaCalendar
 } from "react-icons/fa";
 
 export default function Footer() {
@@ -20,20 +21,24 @@ export default function Footer() {
         {/* Contact Info */}
         <div>
           <h3 className="text-xl font-semibold mb-6">
-            ProHealth Medical & Healthcare Center
+            FAMILY DENTAL CLINIC
           </h3>
           <ul className="space-y-4 text-sm leading-relaxed">
             <li className="flex items-center space-x-4">
               <FaMapMarkerAlt className="text-[#2874c7]" />
-              <span>123 Anywhere St., Any City 12345</span>
+              <span>11A/1D, East Topsia Road, Mirania Gardens, Kolkata 700046</span>
             </li>
             <li className="flex items-center space-x-4">
               <FaPhoneAlt className="text-[#2874c7]" />
-              <span>123-456-7890</span>
+              <span>8777536694,</span>
+              <span>8017710095</span>
             </li>
             <li className="flex items-center space-x-4">
-              <FaEnvelope className="text-[#2874c7]" />
-              <span>hellocallcenter@gmail.com</span>
+              <FaCalendar className="text-[#2874c7]" />
+              <p><b>TUE - SAT</b> | 11:00 AM TO 7:00 PM</p>
+              <p><b>SUNDAY</b> | 11:00 AM TO 4:00 PM </p>
+              
+
             </li>
           </ul>
         </div>
@@ -112,7 +117,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <p className="text-sm text-center md:text-right">
-            Copyright © 2024 Pro Health. All rights reserved.
+            Copyright © 2025 Family Dental Clinic. All rights reserved.
           </p>
         </div>
       </div>

@@ -5,11 +5,12 @@ import Hero from './Components/Hero'
 import Values from './Components/Values'
 import AboutUs from './Components/AboutUs'
 import Footer from './Components/Footer'
-import AwardsSection from './Components/Awards'
+import ServicesSection from './Components/Services'
 import ReviewsSection from './Components/Reviews'
 import Departments from './Components/Departments'
 import BlogPosts from './Components/BlogPosts'
 import Questions from './Components/Questions'
+import Doctors from './Components/Doctors'
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       <Values id="values" />
       <AboutUs id="about" />
       <Departments id="departments" />
-      <AwardsSection id="awards" />
+      <ServicesSection id="services" />
+      <Doctors id ="doctors" />
       <ReviewsSection id="reviews" />
       <BlogPosts id="blog" />
       <Questions id="questions" />
