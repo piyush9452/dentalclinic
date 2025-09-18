@@ -142,7 +142,7 @@ export default function AppointmentForm() {
         </div>
 
         {/* Medical Record */}
-        <div>
+        {/* <div>
           <label className="block text-sm font-medium mb-1">
             Medical Record Number
           </label>
@@ -157,7 +157,7 @@ export default function AppointmentForm() {
               className="w-full focus:outline-none"
             />
           </div>
-        </div>
+        </div> */}
 
         {/* Date + Time */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
