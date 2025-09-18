@@ -117,7 +117,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <p className="text-sm text-center md:text-right">
-            Copyright © 2025 Family Dental Clinic. All rights reserved.
+            Copyright © 2025 Simtrak Solutions. All rights reserved.
           </p>
         </div>
       </div>

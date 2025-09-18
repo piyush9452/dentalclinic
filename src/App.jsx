@@ -11,6 +11,7 @@ import Departments from './Components/Departments'
 import BlogPosts from './Components/BlogPosts'
 import Questions from './Components/Questions'
 import Doctors from './Components/Doctors'
+import AppointmentForm from './Components/AppointmentForm'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Doctors id ="doctors" />
       <ReviewsSection id="reviews" />
       <BlogPosts id="blog" />
+      <AppointmentForm id="appointmentForm" />
       <Questions id="questions" />
       <Footer id="footer" />
     </>
