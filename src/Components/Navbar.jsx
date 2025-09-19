@@ -20,9 +20,14 @@ export default function Navbar() {
     <nav className="transition bg-gradient-to-r from-[#b5e8ff] to-[#a2ebff] shadow-md fixed w-full top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <div className="text-2xl font-bold text-[#274760]">
-          Family Dental<span>Clinic</span>
-        </div>
+       <div className="text-2xl font-bold text-[#274760]">
+  <img
+    src="/Family Dental clinic logo.png" 
+    alt="logo"
+    className="w-23 h-12" 
+  />
+</div>
+
 
         {/* Desktop Links */}
         <ul className="hidden md:flex space-x-8 font-medium relative text-[#274760]">
