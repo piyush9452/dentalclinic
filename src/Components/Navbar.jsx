@@ -24,7 +24,7 @@ export default function Navbar() {
   <img
     src="/Family Dental clinic logo.png" 
     alt="logo"
-    className="w-23 h-12" 
+    className="w-23 h-15" 
   />
 </div>
 
