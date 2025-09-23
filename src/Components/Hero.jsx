@@ -22,8 +22,8 @@ export default function Hero() {
             className="text-4xl md:text-6xl lg:text-6xl font-bold leading-snug font-figtreesans-serif"
             style={{ color: "#274760" }}
           >
-            Your Partner in <br />
-            Health and Wellness
+            Healthy Smiles, Expert Care<br />
+            Your Trusted Dental Clinic in Kolkata
           </h1>
 
           <motion.p
@@ -32,20 +32,9 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            We are committed to providing you with the best medical and
-            healthcare services to help you live healthier and happier.
+            Welcome to Family Dental Clinic, led by Dr. Ankur Aggarwal & Dr. Devarshi Nandi. We provide advanced and affordable dental care in a comfortable environment.
           </motion.p>
 
-          {/* Buttons */}
-          <div className="mt-8 flex items-center space-x-6">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              className="flex items-center space-x-3 text-gray-800 hover:text-[#2C6AE5] transition"
-            >
-              <FaPlay className="w-10 h-10 border border-gray-400 rounded-full p-2" />
-              <span className="font-medium">See how we work</span>
-            </motion.button>
-          </div>
 
           {/* Patient Stats */}
           <motion.div
@@ -72,8 +61,8 @@ export default function Hero() {
               />
             </div>
             <div>
-              <p className="text-[#2C6AE5] font-bold text-lg">150K+</p>
-              <p className="text-gray-600 text-sm">Patient Recover</p>
+              <p className="text-[#2C6AE5] font-bold text-lg">Call to action button</p>
+              <p className="text-gray-600 text-sm">Book Appointment Now</p>
             </div>
           </motion.div>
         </motion.div>
@@ -86,7 +75,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <img
-            src="https://html.laralink.com/prohealth/assets/img/home_1/hero_img.png"
+            src="/dentist.png"
             alt="Healthcare Hero"
             className="w-[100%] md:w-[900px] h-[550px]"
           />
@@ -107,19 +96,8 @@ export default function Hero() {
             <FaPhoneAlt className="w-6 h-6" />
           </div>
           <div>
-            <h4 className="font-semibold text-[#274760]">Hotline</h4>
-            <p className="text-gray-500">123-456-7890</p>
-          </div>
-        </div>
-
-        {/* Ambulance */}
-        <div className="flex items-center space-x-4">
-          <div className="bg-[#264660] text-white p-4 rounded-full">
-            <FaAmbulance className="w-6 h-6" />
-          </div>
-          <div>
-            <h4 className="font-semibold text-[#274760]">Ambulance</h4>
-            <p className="text-gray-500">876-256-876</p>
+            <h4 className="font-semibold text-[#274760]">Number</h4>
+            <p className="text-gray-500">8777536694/8017710095</p>
           </div>
         </div>
 
@@ -130,7 +108,7 @@ export default function Hero() {
           </div>
           <div>
             <h4 className="font-semibold text-[#274760]">Location</h4>
-            <p className="text-gray-500">Kolkata 700046</p>
+            <p className="text-gray-500">Topsia,Kolkata</p>
           </div>
         </div>
 
