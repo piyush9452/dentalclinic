@@ -54,27 +54,32 @@ export default function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.5, duration: 0.7 }}
           >
-            <div className="flex -space-x-2">
-              <img
-                src="https://randomuser.me/api/portraits/men/32.jpg"
-                alt="Patient"
-                className="w-10 h-10 rounded-full border-2 border-white"
-              />
-              <img
-                src="https://randomuser.me/api/portraits/women/44.jpg"
-                alt="Patient"
-                className="w-10 h-10 rounded-full border-2 border-white"
-              />
-              <img
-                src="https://randomuser.me/api/portraits/men/56.jpg"
-                alt="Patient"
-                className="w-10 h-10 rounded-full border-2 border-white"
-              />
-            </div>
-            <div>
-              <p className="text-[#2C6AE5] font-bold text-lg">150K+</p>
-              <p className="text-gray-600 text-sm">Patient Recover</p>
-            </div>
+            <a href="#appointment">
+  {/* <button className="flex items-center bg-white rounded-full shadow-md px-5 py-3 space-x-4 w-max hover:shadow-lg transition"> */}
+    {/* <div className="flex -space-x-2">
+      <img
+        src="https://randomuser.me/api/portraits/men/32.jpg"
+        alt="Patient"
+        className="w-10 h-10 rounded-full border-2 border-white"
+      />
+      <img
+        src="https://randomuser.me/api/portraits/women/44.jpg"
+        alt="Patient"
+        className="w-10 h-10 rounded-full border-2 border-white"
+      />
+      <img
+        src="https://randomuser.me/api/portraits/men/56.jpg"
+        alt="Patient"
+        className="w-10 h-10 rounded-full border-2 border-white"
+      />
+    </div> */}
+    <div>
+      <p className="text-[#2C6AE5] font-bold text-lg">150K+</p>
+      <p className="text-gray-600 text-sm">Patient Recover</p>
+    </div>
+  {/* </button> */}
+</a>
+
           </motion.div>
         </motion.div>
 
