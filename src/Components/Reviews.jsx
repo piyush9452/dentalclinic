@@ -3,19 +3,19 @@ import { FaStar } from "react-icons/fa";
 export default function ReviewsSection() {
   const users = [
     { 
-      name: "PAULO HUBERT", 
-      location: "New York, USA", 
-      image: "https://randomuser.me/api/portraits/men/32.jpg" 
+      name: "Rakesh Kumar", 
+      location: "Uttarakhand, India", 
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDCKcy05_u7YJ0ykQysHuFXySkipE78shYu0zTYiBJIl3-BENiPkrIlxs0_MSfj3ZRfEA&usqp=CAU" 
     },
     { 
-      name: "LAURENCE VENDETTA", 
-      location: "California, USA", 
-      image: "https://randomuser.me/api/portraits/women/44.jpg" 
+      name: "Priya Dutta", 
+      location: "Himanchal Pradesh, India", 
+      image: "https://plus.unsplash.com/premium_photo-1681483544221-e04d719060ff?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGluZGlhbiUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D" 
     },
     { 
-      name: "CASSANDRA RAUL", 
-      location: "Florida", 
-      image: "https://randomuser.me/api/portraits/women/65.jpg" 
+      name: "Sanya Pandey", 
+      location: "Uttar Pradesh, India", 
+      image: "https://media.istockphoto.com/id/2216052190/photo/successful-confident-businesswoman-at-workplace-inside-office-woman-with-crossed-arms-smiling.webp?a=1&b=1&s=612x612&w=0&k=20&c=Sh60m26Ofmk3m5x-rcvadS4CoEWU4d4M-bkro5bfLNg=" 
     },
   ];
 

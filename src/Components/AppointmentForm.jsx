@@ -35,7 +35,7 @@ export default function AppointmentForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // If "Other", replace reason with custom description
+
     const finalData = {
       ...formData,
       reason:
@@ -246,7 +246,7 @@ export default function AppointmentForm() {
       {/* Right Side Image */}
       <div className="w-full md:w-1/2 flex justify-center mt-6 md:mt-0">
         <img
-          src="https://html.laralink.com/prohealth/assets/img/home_1/appointment.jpeg"
+          src="https://images.unsplash.com/photo-1565090567208-c8038cfcf6cd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGVudGlzdCUyMGluZGlhbnxlbnwwfHwwfHx8MA%3D%3D"
           alt="Doctor"
           className="w-96 rounded-2xl shadow-lg"
         />
