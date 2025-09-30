@@ -63,7 +63,7 @@ export default function Hero() {
 
               <a href="#appointment">
   {/* <button className=" text-blue-500 rounded-xl transition flex flex-col items-center"> */}
-    <p className="font-bold text-lg text-blue-500">Call to action button</p>
+    <p className="font-bold text-lg text-[#274760]">Call to action button</p>
     <p className="text-sm">Book Appointment Now</p>
   {/* </button> */}
 </a>

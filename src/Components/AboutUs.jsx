@@ -10,7 +10,7 @@ export default function AboutUs() {
         <div className="relative flex flex-col items-center">
           {/* Main Image */}
           <img
-            src="https://html.laralink.com/prohealth/assets/img/home_1/about.png"
+            src="https://img.freepik.com/premium-photo/comprehensive-dental-care-dentists-dental-procedures_984027-223992.jpg?ga=GA1.1.315191760.1755696332&semt=ais_hybrid&w=740&q=80"
             alt="Doctor with patient"
             className="rounded-2xl w-[90%] mb-6"
           />
@@ -48,12 +48,12 @@ export default function AboutUs() {
           >
             About Us
           </h2>
-          <p className="text-xl font-semibold text-[#274740] mb-6">PRO HEALTH</p>
+          <p className="text-xl font-semibold text-[#274740] mb-6">FAMILY DENTAL CLINIC</p>
 
           <div className="flex items-start mb-6">
             <FaArrowRight className="text-[#274740] text-xl mt-1 mr-3" />
             <p className="text-gray-600 leading-relaxed text-lg">
-              ProHealth is a team of experienced medical professionals
+              Family Dental Clinic is a team of experienced medical professionals
             </p>
           </div>
 
