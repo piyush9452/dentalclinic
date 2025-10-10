@@ -6,13 +6,13 @@ export default function Doctors() {
   const doctors = [
     {
       name: "Dr. Devarshi Nandi",
-      qualification: "BDS, MDS (Orthodontics)",
-      contact: "+91 877536694",
+      qualification: "BDS(Manipal), MDS (Orthodontics and Dentofacial Orthopaedics), Certified Implantologist",
+      contact: "+91 8777536694 | +91 9830600255",
       image: "https://i.pravatar.cc/200?img=47",
     },
     {
       name: "Dr. Ankur Aggarwal",
-      qualification: "BDS, MDS (Endodontics)",
+      qualification: "BDS(Manipal), MDS (Oral Medicine and Radiology) Professor | HCDHS",
       contact: "+91 8017710095",
       image:  "https://i.pravatar.cc/200?img=12",
     },
@@ -23,7 +23,7 @@ export default function Doctors() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-2xl font-semibold text-[#307CB4]">OUR DOCTORS</h2>
+          {/* <h2 className="text-2xl font-semibold text-[#307CB4]">OUR DOCTORS</h2> */}
           <h3 className="text-4xl font-bold text-[#264660]">Meet Our Specialists</h3>
         </div>
 

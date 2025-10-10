@@ -2,16 +2,16 @@ import { useState } from 'react'
 import './App.css'
 import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
-import Values from './Components/Values'
+// import Values from './Components/Values'
 import AboutUs from './Components/AboutUs'
 import Footer from './Components/Footer'
 import ServicesSection from './Components/Services'
 import ReviewsSection from './Components/Reviews'
-import Departments from './Components/Departments'
-import BlogPosts from './Components/BlogPosts'
-import Questions from './Components/Questions'
+// import Departments from './Components/Departments'
+// import BlogPosts from './Components/BlogPosts'
+// import Questions from './Components/Questions'
 import Doctors from './Components/Doctors'
-import AppointmentForm from './Components/AppointmentForm'
+// import AppointmentForm from './Components/AppointmentForm'
 
 function App() {
   return (
@@ -19,15 +19,15 @@ function App() {
       <Navbar />
       
       <Hero id="hero" />
-      <Values id="values" />
+      {/* <Values id="values" /> */}
       <AboutUs id="about" />
-      <Departments id="departments" />
+      {/* <Departments id="departments" /> */}
       <ServicesSection id="services" />
       <Doctors id ="doctors" />
       <ReviewsSection id="reviews" />
-      <BlogPosts id="blog" />
-      <AppointmentForm id="appointmentForm" />
-      <Questions id="questions" />
+      {/* <BlogPosts id="blog" /> */}
+      {/* <AppointmentForm id="appointmentForm" /> */}
+      {/* <Questions id="questions" /> */}
       <Footer id="footer" />
     </>
   )

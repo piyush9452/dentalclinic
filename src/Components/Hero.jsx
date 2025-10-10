@@ -11,28 +11,28 @@ export default function Hero() {
         background: "linear-gradient(90deg, #d7f2ffff 0%, #c0f1ffff 100%)",
       }}
     >
-      <div className="max-w-7xl ml-10 mr-10 mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div className="max-w-7xl ml-5 mr-10 mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
         {/* Left Content */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1
-            className="text-4xl md:text-6xl lg:text-6xl font-bold leading-snug font-figtreesans-serif"
-            style={{ color: "#274760" }}
-          >
-            Healthy Smiles, Expert Care<br />
-            Your Trusted Dental Clinic in Kolkata
-          </h1>
+              <h4
+  className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug font-figtreesans-serif whitespace-nowrap"
+  style={{ color: "#274760" }}
+>
+  Healthy Smiles, Expert Care
+</h4>
+
 
           <motion.p
-            className="mt-6 text-lg text-gray-700"
+            className="mt-3 text-lg text-gray-700"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Welcome to Family Dental Clinic, led by Dr. Ankur Aggarwal & Dr. Devarshi Nandi. We provide advanced and affordable dental care in a comfortable environment.
+              Your Trusted Dental Clinic in Kolkata
           </motion.p>
 
 
@@ -62,11 +62,11 @@ export default function Hero() {
             </div> */}
 
               <a href="#appointment">
-  {/* <button className=" text-blue-500 rounded-xl transition flex flex-col items-center"> */}
-    <p className="font-bold text-lg text-[#274760]">Call to action button</p>
-    <p className="text-sm">Book Appointment Now</p>
-  {/* </button> */}
-</a>
+             <button className="text-blue-500 rounded-xl transition flex flex-col items-center">
+             <p className="font-bold text-lg text-[#274760]">Book Appointment Now</p>
+   
+             </button>
+             </a>
 
 
 
@@ -75,7 +75,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Right Image */}
-        <motion.div
+        {/* <motion.div
           className="flex justify-center md:justify-end"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -84,10 +84,25 @@ export default function Hero() {
           <img
             src="/dentist.png"
             alt="Healthcare Hero"
-            className="w-[100%] md:w-[900px] h-[550px]"
+            className="w-[100%] md:w-[900px] h-[550px] "
           />
         </motion.div>
-      </div>
+      </div> */}
+
+
+      <motion.div
+  className="flex justify-center md:justify-end pl-4 md:pl-12 ml-8"
+  initial={{ opacity: 0, x: 50 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8 }}
+>
+  <img
+    src="https://images.unsplash.com/photo-1697033803887-b1a061290569?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGRlbnRpc3QlMjBpbmRpYW58ZW58MHx8MHx8fDA%3D"
+    alt="Healthcare Hero"
+    className="w-[100%] md:w-[700px] h-[550px]"
+  />
+</motion.div>
+</div>
 
       {/* Bottom Info Section */}
       <motion.div
@@ -103,8 +118,8 @@ export default function Hero() {
             <FaPhoneAlt className="w-6 h-6" />
           </div>
           <div>
-            <h4 className="font-semibold text-[#274760]">Number</h4>
-            <p className="text-gray-500">8777536694/8017710095</p>
+            {/* <h4 className="font-semibold text-[#274760]">Number</h4> */}
+            <p className="font-semibold text-[#274760]">8777536694 / 8017710095</p>
           </div>
         </div>
 
@@ -114,8 +129,8 @@ export default function Hero() {
             <FaMapMarkerAlt className="w-6 h-6" />
           </div>
           <div>
-            <h4 className="font-semibold text-[#274760]">Location</h4>
-            <p className="text-gray-500">Topsia,Kolkata</p>
+            {/* <h4 className="font-semibold text-[#274760]">Location</h4> */}
+            <p className="font-semibold text-[#274760]">Topsia,Kolkata</p>
           </div>
         </div>
 

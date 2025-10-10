@@ -11,14 +11,14 @@ export default function Navbar() {
     { name: "Home", href: "#hero" },
     { name: "About", href: "#about" },
     { name: "Doctor Details", href: "#doctors" },
-    { name: "Blog", href: "#blog" },
+    // { name: "Blog", href: "#blog" },
     
     { name: "Contact", href: "#footer" },
   ];
 
   return (
     <nav className="transition bg-gradient-to-r from-[#b5e8ff] to-[#a2ebff] shadow-md fixed w-full top-0 left-0 z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-1 flex items-center justify-between">
         {/* Logo */}
            {/* <div className="flex items-center">
   <img
@@ -32,7 +32,7 @@ export default function Navbar() {
   <img 
     src="/Family Dental clinic logo.png" 
     alt="logo" 
-    className="w-12 h-auto object-contain" 
+    className="w-20 h-auto object-contain" 
   />
  
 </div>

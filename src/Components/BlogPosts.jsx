@@ -3,17 +3,17 @@ import { FaLinkedinIn, FaFacebookF, FaTwitter } from "react-icons/fa";
 export default function BlogPosts() {
   const posts = [
     {
-      date: "May 1, 2023",
+      date: "May 1, 2025",
       title: "The Benefits of Mindfulness Meditation for Stress and Anxiety",
       image: "https://html.laralink.com/prohealth/assets/img/home_1/post_1.jpeg",
     },
     {
-      date: "May 1, 2023",
+      date: "May 1, 2025",
       title: "Healthy Eating on a Budget: Tips and Strategies",
       image: "https://html.laralink.com/prohealth/assets/img/home_1/post_2.jpeg",
     },
     {
-      date: "May 1, 2023",
+      date: "May 1, 2025",
       title: "The Importance of Regular Cancer Screenings and Early Detection",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPFc8kfsdtU95_YLkfTQH8QQuD_NzxcYGbZA&s",
     },
