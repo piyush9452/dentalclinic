@@ -25,9 +25,14 @@ export default function Footer() {
               <ul className="space-y-4 text-sm leading-relaxed">
                 <li className="flex items-start gap-3">
                   <FaMapMarkerAlt className="text-[#2874c7] mt-1 shrink-0" />
-                  <span>
+                  <a 
+                    href="https://www.google.com/maps/search/?api=1&query=11A%2F1D%2C+East+Topsia+Road%2C+Mirania+Gardens%2C+Kolkata+700046" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-[#2874c7] transition-colors"
+                  >
                     11A/1D, East Topsia Road, Mirania Gardens, Kolkata 700046
-                  </span>
+                  </a>
                 </li>
                 <li className="flex items-center gap-3">
                   <FaPhoneAlt className="text-[#2874c7]" />

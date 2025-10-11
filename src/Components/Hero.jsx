@@ -61,7 +61,7 @@ export default function Hero() {
               />
             </div> */}
 
-              <a href="#appointment">
+              <a href="https://wa.me/918017710095?text=Hello,%20I%20would%20like%20to%20book%20an%20appointment" target="_blank" rel="noopener noreferrer">
              <button className="text-blue-500 rounded-xl transition flex flex-col items-center">
              <p className="font-bold text-lg text-[#274760]">Book Appointment Now</p>
    
@@ -134,7 +134,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <a href="#appointment">
+        <a href="https://wa.me/918017710095?text=Hello,%20I%20would%20like%20to%20book%20an%20appointment" target="_blank" rel="noopener noreferrer">
           <motion.button
             whileHover={{ scale: 1.05 }}
             className="bg-gradient-to-r from-[#264660] to-[#274760] text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition flex items-center space-x-2"
