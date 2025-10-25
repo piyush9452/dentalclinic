@@ -12,6 +12,7 @@ export default function Navbar() {
     { name: "About", href: "#about" },
     { name: "Doctor Details", href: "#doctors" },
     // { name: "Blog", href: "#blog" },
+    // { name: "Blog", href: "#blog" },
     
     { name: "Contact", href: "#footer" },
   ];
@@ -19,21 +20,16 @@ export default function Navbar() {
   return (
     <nav className="transition bg-gradient-to-r from-[#b5e8ff] to-[#a2ebff] shadow-md fixed w-full top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-1 flex items-center justify-between">
-        {/* Logo */}
-           {/* <div className="flex items-center">
-  <img
-    src="/Family Dental clinic logo.png"
-    alt="logo"
-    className="h-12 w-30 object-contain"
-  />
-</div> */}
+        
 
 <div className="flex items-center">
   <img 
     src="/Family Dental clinic logo.png" 
     alt="logo" 
     className="w-20 h-auto object-contain" 
+    
   />
+  <p className="text-[#274760]">Family Dental Clinic</p>
  
 </div>
 
@@ -42,7 +38,7 @@ export default function Navbar() {
 
 
         {/* Desktop Links */}
-        <ul className="hidden md:flex space-x-8 font-medium relative text-[#274760]">
+        <ul className="hidden md:flex space-x-8 mr-9 font-medium relative text-[#274760]">
           {links.map((link, idx) => (
             <li key={idx}>
               <a
@@ -56,25 +52,25 @@ export default function Navbar() {
         </ul>
 
         {/* Right Side: Search + Hamburger */}
-        <div className="flex items-center space-x-4">
+        {/* <div className="flex items-center space-x-4"> */}
           {/* Search Icon */}
-          <button
+          {/* <button
             className="text-[#274760] hover:text-yellow-300 text-xl"
             onClick={() => setSearchOpen(!searchOpen)}
             aria-label="Toggle Search"
           >
             {searchOpen ? <FaTimes /> : <FaSearch />}
-          </button>
+          </button> */}
 
           {/* Mobile Menu Button */}
-          <button
+          {/* <button
             className="md:hidden text-white hover:text-yellow-300 text-2xl"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle Menu"
           >
             {isOpen ? <FaTimes /> : <FaBars />}
-          </button>
-        </div>
+          </button> */}
+        {/* </div> */}
       </div>
 
       {/* Mobile Dropdown */}
@@ -98,7 +94,7 @@ export default function Navbar() {
       </div>
 
       {/* Search bar dropdown */}
-      <div
+      {/* <div
         className={`bg-white shadow-md px-6 flex items-center space-x-3 overflow-hidden transition-all duration-500 ${
           searchOpen ? "max-h-20 py-3 opacity-100" : "max-h-0 py-0 opacity-0"
         }`}
@@ -114,7 +110,7 @@ export default function Navbar() {
         >
           <FaTimes />
         </button>
-      </div>
+      </div> */}
     </nav>
   );
 }
