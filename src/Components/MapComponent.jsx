@@ -23,7 +23,7 @@ const MapComponent = () => {
   return (
     <div
       className="
-        w-full 
+        w-[345px] 
         max-w-[600px]
         h-[180px] 
         sm:h-[250px] 
