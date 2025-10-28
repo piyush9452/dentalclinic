@@ -2,7 +2,7 @@ import {
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaFacebookF,
-  FaYoutube,
+
   FaLinkedinIn,
   FaWhatsapp,
   FaInstagram,
@@ -80,9 +80,10 @@ export default function Footer() {
               {[
                 { Icon: FaWhatsapp },
                 { Icon: FaInstagram },
-                { Icon: FaLinkedinIn },
                 { Icon: FaFacebookF },
-                { Icon: FaYoutube },
+                { Icon: FaLinkedinIn },
+
+              
               ].map(({ Icon }, i) => (
                 <a
                   key={i}
