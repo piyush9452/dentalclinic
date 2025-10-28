@@ -80,8 +80,8 @@ export default function Footer() {
               {[
                 { Icon: FaWhatsapp },
                 { Icon: FaInstagram },
-                { Icon: FaFacebookF },
                 { Icon: FaLinkedinIn },
+                { Icon: FaFacebookF },
 
               
               ].map(({ Icon }, i) => (
