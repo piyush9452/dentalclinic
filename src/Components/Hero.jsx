@@ -1,5 +1,5 @@
 // src/components/Hero.jsx
-import { FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+
 import { FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 
