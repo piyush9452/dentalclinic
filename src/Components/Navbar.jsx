@@ -22,16 +22,18 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-1 flex items-center justify-between">
         
 
-<div className="flex items-center">
+             <div className="flex items-center">
   <img 
     src="/Family Dental clinic logo.png" 
     alt="logo" 
     className="w-20 h-auto object-contain" 
-    
   />
-  <p className="text-[#274760]">Family Dental Clinic</p>
- 
+  <div className="flex flex-col ml-2">
+    <p className="text-[#274760] font-serif leading-tight">FAMILY</p>
+    <p className="text-[#274760] font-serif leading-tight">DENTAL CLINIC</p>
+  </div>
 </div>
+
 
 
 

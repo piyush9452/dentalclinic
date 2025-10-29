@@ -16,7 +16,7 @@ export default function AboutUs() {
           />
 
           {/* Overlay Badge with rotating ring */}
-          <div className="absolute -top-8 right-8 bg-white rounded-full shadow-lg flex flex-col items-center text-[#274760] font-semibold text-sm w-35 h-35 justify-center">
+          <div className="absolute -top-8 right-6 bg-white rounded-full shadow-lg flex flex-col items-center text-[#274760] font-semibold text-sm w-35 h-35 justify-center">
             {/* Rotating Ring */}
             <motion.img
               src="https://html.laralink.com/prohealth/assets/img/home_1/about_mini.svg"
