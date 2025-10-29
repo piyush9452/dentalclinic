@@ -30,7 +30,7 @@ export default function Navbar() {
   />
   <div className="flex flex-col ml-2">
     <p className="text-[#274760] font-serif leading-tight">FAMILY</p>
-    <p className="text-[#274760] font-serif leading-tight">DENTAL CLINIC</p>
+    <p className="text-[#274760] font-serif leading-tight">Dental Clinic</p>
   </div>
 </div>
 
